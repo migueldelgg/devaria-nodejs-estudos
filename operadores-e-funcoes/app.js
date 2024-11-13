@@ -40,14 +40,20 @@ readLine.question("Favor informar um numero: ", (numero1) => {
                     if(operadorValidado != null) {
                         switch(operadorValidado) {
                             case '+' : console.log(`O resultado da operação é: ${validateNumber1} + ${validateNumber2} = ${validateNumber1 + validateNumber2}`)
+                                readLine.close();
                                 break;
                             case '-' : console.log(`O resultado da operação é: ${validateNumber1} - ${validateNumber2} = ${validateNumber1 - validateNumber2}`)
+                                readLine.close();
                                 break;
                             case '/' : console.log(`O resultado da operação é: ${validateNumber1} / ${validateNumber2} = ${validateNumber1 / validateNumber2}`)
+                                readLine.close();
                                 break;
                             case '*' : console.log(`O resultado da operação é: ${validateNumber1} * ${validateNumber2} = ${validateNumber1 * validateNumber2}`)
+                                readLine.close();
                                 break;
                             case '%' : console.log(`O resultado da operação é: ${validateNumber1} % ${validateNumber2} = ${validateNumber1 % validateNumber2}`)
+                                readLine.close();
+                                break;
                         }
                     }
                 });
